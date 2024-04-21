@@ -79,7 +79,7 @@ export default function MovieDetails({
     if (!title) return;
     document.title = `Moive | ${title}`;
     return function () {
-      document.title = "pop Corn";
+      document.title = "Film🎞️Fusion";
     };
   }, [title]);
 
