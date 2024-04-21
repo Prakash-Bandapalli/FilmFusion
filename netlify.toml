@@ -1,11 +1,11 @@
 [[redirects]]
   from = "/api/search/*"
-  to = `http://www.omdbapi.com/?apikey=${KEY}&s=:splat`
+  to = "http://www.omdbapi.com/?apikey=${KEY}&s=:splat"
   status = 200
   force = true
 
 [[redirects]]
   from = "/api/details/*"
-  to = `http://www.omdbapi.com/?apikey=${KEY}&i=:splat`
+  to = "http://www.omdbapi.com/?apikey=${KEY}&i=:splat"
   status = 200
   force = true
