@@ -11,7 +11,7 @@ import FoundResults from "./FoundResults";
 import ErrorMsg from "./ErrorMsg";
 import MovieList from "./MovieList";
 
-const KEY = "9e3f9507";
+const KEY = process.env.REACT_APP_API_KEY;
 export default function App() {
   const [movies, setMovies] = useState([]);
   const [watched, setWatched] = useState([]);

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Loader from "./Loader";
 import StarRating from "./StarRating";
-const KEY = "9e3f9507";
+const KEY = process.env.REACT_APP_API_KEY;
 
 export default function MovieDetails({
   selectedId,
