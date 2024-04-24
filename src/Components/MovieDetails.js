@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Loader from "./Loader";
 import StarRating from "./StarRating";
+import { useKey } from "./useKey";
 const KEY = "9e3f9507";
 
 export default function MovieDetails({
@@ -47,19 +48,7 @@ export default function MovieDetails({
     onBack();
   }
 
-  useEffect(() => {
-    function callBack(e) {
-      if (e.code === "Escape") {
-        onBack();
-        console.log("closing");
-      }
-    }
-    document.addEventListener("keydown", callBack);
-
-    return function () {
-      document.removeEventListener("keydown", callBack);
-    };
-  }, [onBack]);
+  useKey("Escape", onBack);
 
   useEffect(() => {
     async function getMovieDetails() {

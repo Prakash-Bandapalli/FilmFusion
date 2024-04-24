@@ -339,3 +339,49 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* msg box */
+.msgBox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.msgBox .innerBox {
+  position: relative;
+  width: 60%;
+  background-color: var(--color-primary);
+  text-align: center;
+  box-shadow: 5px 5px 3px rgb(68, 71, 248);
+  border-radius: 5px;
+}
+.innerBox h1 {
+  font-style: italic;
+  padding: 2rem;
+  font-size: 3rem;
+  color: var(--color-text);
+}
+.innerBox p {
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--color-text);
+  font-weight: bold;
+}
+.innerBox button {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 3rem;
+  border: none;
+  background: transparent;
+  color: var(--color-red);
+  font-weight: bold;
+  cursor: pointer;
+}
